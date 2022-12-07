@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Login"
+        android:text="Sign up"
         android:textColor="	#ffffff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,11 +30,11 @@
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
-        android:id="@+id/btnSignUpNow"
+        android:id="@+id/txtBackLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
-        android:text="Don’t have account ? Sign up now"
+        android:text="Back to login"
         android:textColor="#ffffff"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,17 +42,17 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSignUp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/white"
-        android:text="Login"
+        android:text="Sign up"
         android:textAllCaps="false"
         android:textColor="#4e43f9"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSignUpNow"
+        app:layout_constraintBottom_toTopOf="@+id/txtBackLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -81,6 +81,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
+        android:id="@+id/txtPassword"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="8dp"
@@ -101,5 +102,31 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtConPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#7992FC"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:padding="24dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
